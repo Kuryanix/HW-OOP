@@ -13,6 +13,7 @@ public class Human {
         checkCity(city);
         checkProfession(profession);
     }
+
     public Human(String name, int birthDate, String city, String profession) {
         checkName(name);
         checkAge(birthDate);
