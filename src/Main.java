@@ -6,39 +6,39 @@ public class Main {
         Human maxim1 = new Human();
         maxim1.name = "Максим";
         maxim1.city = "Минск";
-        maxim1.birthDate = 1987;
+        maxim1.age = 35;
         maxim1.profession = "бренд-менеджер";
 
         Human anna1 = new Human();
         anna1.name = "Аня";
         anna1.city = "Москва";
-        anna1.birthDate = 1993;
+        anna1.age = 29;
         anna1.profession = "методист образовательных программ";
 
         Human kate1 = new Human();
         kate1.name = "Катя";
         kate1.city = "Калининград";
-        kate1.birthDate = 1994;
+        kate1.age = 28;
         kate1.profession = "продакт-менеджер";
 
         Human artem1 = new Human();
         artem1.name = "Артем";
         artem1.city = "Москва";
-        artem1.birthDate = 1995;
+        artem1.age = 27;
         artem1.profession = "директор по развитию бизнеса";
 
-        maxim1.info();
-        anna1.info();
-        kate1.info();
-        artem1.info();
+        maxim1.infoWithYear();
+        anna1.infoWithYear();
+        kate1.infoWithYear();
+        artem1.infoWithYear();
 
         System.out.println();
         // Задание 2.1
 
-        Human maxim = new Human("Максим", 1987, "Москва", "бренд-менеджер");
-        Human anna = new Human("Аня", -1993, "Москва", "методист образовательных программ");
-        Human kate = new Human("Катя", 1994, "Калининград", "продакт-менеджер");
-        Human artem = new Human("Артем", 1995, "Москва", "директор по развитию бизнеса");
+        Human maxim = new Human("Максим", 35, "Москва", "бренд-менеджер");
+        Human anna = new Human("Аня", -29, "Москва", "методист образовательных программ");
+        Human kate = new Human("Катя", 28, "Калининград", "продакт-менеджер");
+        Human artem = new Human("Артем", 27, "Москва", "директор по развитию бизнеса");
 
         maxim.info();
         anna.info();

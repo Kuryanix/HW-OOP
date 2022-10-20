@@ -3,19 +3,19 @@ public class Human {
     // Задание 1.1; 1.2; 2.1 и 3.1
 
     public String name;
-    public int birthDate;
+    public int age;
     public String city;
     public String profession;
 
     public Human() {
         checkName(name);
-        checkBirthDate(birthDate);
+        checkAge(age);
         checkCity(city);
         checkProfession(profession);
     }
     public Human(String name, int birthDate, String city, String profession) {
         checkName(name);
-        checkBirthDate(birthDate);
+        checkAge(birthDate);
         checkCity(city);
         checkProfession(profession);
     }
@@ -28,11 +28,11 @@ public class Human {
         }
     }
 
-    public void checkBirthDate(int birthDate) {
-        if (birthDate < 0) {
-            this.birthDate = Math.abs(birthDate);
+    public void checkAge(int age) {
+        if (age < 0) {
+            this.age = Math.abs(age);
         } else {
-            this.birthDate = birthDate;
+            this.age = age;
         }
     }
 
@@ -52,7 +52,11 @@ public class Human {
         }
     }
 
+    public void infoWithYear() {
+        int currentYear = 2022;
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + city + ". Я родился в " + (currentYear-age) + " году. Я работаю на должности " + profession + ". Будем Знакомы!");
+    }
     public void info() {
-        System.out.println("Привет! Меня зовут " + name + ". Я из города " + city + ". Я родился в " + birthDate + " году. Я работаю на должности " + profession + ". Будем Знакомы!");
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + city + ". Мне " + age + " лет. Я работаю на должности " + profession + ". Будем Знакомы!");
     }
 }
